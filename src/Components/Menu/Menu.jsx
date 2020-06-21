@@ -59,7 +59,7 @@ const Menu = ({ classes, pathname }) => {
           button
           className={pathname === '/' ? classes.activeNav : classes.listItem}
         >
-          <ToolTip showText={collapse && 'Homepage'}>
+          <ToolTip showText={collapse ? 'Homepage' : ''}>
             <ListItemIcon className={classes.listIcon}>
               <Home />
             </ListItemIcon>
@@ -74,7 +74,7 @@ const Menu = ({ classes, pathname }) => {
             pathname === '/dashboard' ? classes.activeNav : classes.listItem
           }
         >
-          <ToolTip showText={collapse && 'Dashboard'}>
+          <ToolTip showText={collapse ? 'Dashboard' : ''}>
             <ListItemIcon className={classes.listIcon}>
               <Dashboard />
             </ListItemIcon>
@@ -100,7 +100,7 @@ const Menu = ({ classes, pathname }) => {
             pathname === '/friends' ? classes.activeNav : classes.listItem
           }
         >
-          <ToolTip showText={collapse && 'Friends'}>
+          <ToolTip showText={collapse ? 'Friends' : ''}>
             <ListItemIcon className={classes.listIcon}>
               <PeopleAlt />
             </ListItemIcon>
@@ -115,7 +115,7 @@ const Menu = ({ classes, pathname }) => {
             pathname === '/settings' ? classes.activeNav : classes.listItem
           }
         >
-          <ToolTip showText={collapse && 'Settings'}>
+          <ToolTip showText={collapse ? 'Settings' : ''}>
             <ListItemIcon className={classes.listIcon}>
               <Settings />
             </ListItemIcon>
@@ -130,7 +130,7 @@ const Menu = ({ classes, pathname }) => {
             pathname === '/information' ? classes.activeNav : classes.listItem
           }
         >
-          <ToolTip showText={collapse && 'Information'}>
+          <ToolTip showText={collapse ? 'Information' : ''}>
             <ListItemIcon className={classes.listIcon}>
               <Description />
             </ListItemIcon>
